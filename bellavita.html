@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BELLA-VITA</title>
+
+    <style>
+        * {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .header {
+            height: 120px;
+        }
+
+        .header2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 340px;
+            margin-top: -80px;
+
+        }
+
+        .img {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            margin-right: 230px;
+        }
+
+        .img1 {
+            display: flex;
+            gap: 10px;
+            border-bottom: 2px solid black;
+            width: 250px;
+            margin-left: 120px;
+        }
+
+        .header3 {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: -70px;
+        }
+
+        .heading1 {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 30px;
+            margin-top: 30px;
+        }
+
+        .product1 {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 120px;
+            margin-right: 120px;
+            margin-top: 45px;
+        }
+
+        .offer_description {
+            font-size: small;
+            color: grey;
+        }
+
+        .heading {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .star {
+            display: flex;
+            gap: 3px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .price {
+            display: flex;
+            gap: 10px;
+        }
+
+        .cost {
+            display: flex;
+            margin-top: 3px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .orig_cost {
+            display: flex;
+            font-size: 16px;
+            margin-top: 5px;
+            color: gray;
+        }
+
+        .cart {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-weight: 500;
+            margin-top: 7px;
+        }
+
+        .view {
+            border: 2px solid black;
+            width: 240px;
+            height: 40px;
+            text-align: center;
+            padding-top: 10px;
+            margin-left: 680px;
+            margin-top: 50px;
+        }
+
+        .product2 {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .p_img {
+            height: 170px;
+        }
+
+        .txt {
+            font-size: 16px;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .quiz {
+            display: flex;
+            justify-content: center;
+            margin-top: 80px;
+            gap: 10px;
+        }
+
+        .quiz_img {
+            height: 190px;
+            width: 540px;
+        }
+
+        .product3 {
+            display: flex;
+            /* justify-content:center; */
+            gap: 100px;
+            margin-top: 50px;
+            margin-left: 215px;
+        }
+
+        .product4 {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .p4_img {
+            height: 280px;
+            width: 330px;
+        }
+
+        .product5 {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .p5_img {
+            height: 120px;
+            width: 120px;
+        }
+
+        .icon {
+            display: flex;
+            margin-top: 30px;
+            margin-left: 230px;
+            text-align: center;
+            width: 1100px;
+            gap: 50px;
+        }
+
+        .txt1 {
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .txt2 {
+            font-size: 13px;
+            margin-top: 8px;
+            color: gray;
+        }
+
+        .product6 {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            align-items: center;
+            gap: 90px;
+        }
+
+        .stars {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            gap: 5px;
+        }
+
+        .product7 {
+            display: flex;
+            margin-top: 80px;
+        }
+
+        .p7_img {
+            height: 303px;
+            width: 303px;
+        }
+
+        .product8 {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .footer {
+            background-color: #424242;
+            height: 450px;
+            color: white;
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .footer-section {
+            font-size: 15px;
+            margin-top: 90px;
+        }
+
+        .footer-section>div {
+            margin-top: 10px;
+        }
+
+
+        .exclusive {
+            margin-top: 90px;
+            font-size: 15px;
+        }
+
+        .exclusive>div {
+            margin-top: 10px;
+        }
+
+        .social-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .mail-siegnup {
+            display: flex;
+            gap: 120px;
+            border-bottom: 1px solid white;
+            width: 250px;
+            font-size: 15px;
+            opacity: 0.6;
+        }
+
+        .searched {
+            background-color: #424242;
+            color: white;
+        }
+
+        .searched>h4 {
+            margin-left: 170px;
+        }
+
+        .searched>div {
+            margin-left: 170px;
+            margin-top: 20px;
+            font-size: 11px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="header1">
+            <div style="background-color: black; color: white; text-align: center; height: 30px; font-size:15px;">
+                <div>
+                    <img style="height: 15px; margin-right:250px;" src="./ArrowLeft.png">
+                    <img style="height:17px; margin-top: 3px;"
+                        src="https://cdn-icons-png.flaticon.com/128/1139/1139982.png">
+                    FREE GIFT on all PREPAID Orders
+                    <img style="height: 15px; margin-left: 250px;" src="./ArrowRight.png">
+                </div>
+            </div>
+        </div>
+        <div class="header2">
+            <div class="img1">
+                <div><img style="height: 15px;" src="https://cdn-icons-png.flaticon.com/128/54/54481.png"></div>
+                <div style="font-size:15px; color: rgb(50, 50, 50);">Search</div>
+            </div>
+            <div><img style="height:210px;" src="./bellavita_logo.png"></div>
+            <div class="img">
+                <div><img style="height: 23px;" src="https://cdn-icons-png.flaticon.com/128/456/456212.png"></div>
+                <div><img style="height: 30px;" src="https://cdn-icons-png.flaticon.com/128/2567/2567829.png"></div>
+            </div>
+        </div>
+        <div class="header3">
+            <div>CRAZY DEALS</div>
+            <div>SHOP ALL</div>
+            <div>BEST SELLERS</div>
+            <div>PERFUMES</div>
+            <div>BATH & BODY</div>
+            <div>COSMETICS</div>
+            <div>NEW ARRIVALS</div>
+            <div>SKINCARE</div>
+            <div>GIFTING</div>
+        </div>
+    </div>
+
+    <div class="bg_img">
+        <img style="height: 560px; width:100%;"
+            src="https://bellavitaorganic.com/cdn/shop/files/1920-720_121808f8-0989-4de9-9691-161dc7c43fd6.jpg?v=1724160142&width=1920">
+    </div>
+
+    <div class="heading1">
+        <div>BEST SELLERS</div>
+        <div style="color:#d6d6d6;">|</div>
+        <div style="color: #d6d6d6">NEW ARRIVALS</div>
+    </div>
+
+    <div class="product1">
+        <div>
+            <div>
+                <img src="https://bellavitaorganic.com/cdn/shop/files/front_2.jpg?v=1723645186&width=300">
+            </div>
+            <div class="offer_description">
+                GIFT SET FOR MEN
+            </div>
+            <div class="heading">
+                Luxury Perfume Gift Set For Me...
+            </div>
+            <div class="star">
+                <div><img style="height: 20px;" src="https://cdn-icons-png.flaticon.com/128/2107/2107957.png"></div>
+                <div>4.7</div>
+                <div>|</div>
+                <div><img style="height:26px;" src="https://cdn-icons-png.flaticon.com/128/15050/15050690.png"></div>
+                <div>(1221 Reviews)</div>
+            </div>
+            <div class="price">
+                <div class="cost">
+                    <div><img style="height:22px; margin-top:3px;"
+                            src="https://cdn-icons-png.flaticon.com/128/3850/3850959.png"></div>
+                    <div>499.00</div>
+                </div>
+                <div class="orig_cost">
+                    <div><s>₹ 849.00</s></div>
+                </div>
+            </div>
+            <div class="cart">
+                <div>ADD TO CART</div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <img
+                    src="https://bellavitaorganic.com/cdn/shop/files/1_f3651453-9ace-4b6e-b0ac-4ee2b9e5e7cd.jpg?v=1714548565&width=300">
+            </div>
+            <div class="offer_description">
+                EAU DE PARFUM
+            </div>
+            <div class="heading">
+                CEO Man
+            </div>
+            <div class="star">
+                <div><img style="height: 20px;" src="https://cdn-icons-png.flaticon.com/128/2107/2107957.png"></div>
+                <div>4.6</div>
+                <div>|</div>
+                <div><img style="height:26px;" src="https://cdn-icons-png.flaticon.com/128/15050/15050690.png"></div>
+                <div>(847 Reviews)</div>
+            </div>
+            <div class="price">
+                <div class="cost">
+                    <div><img style="height:22px; margin-top:3px;"
+                            src="https://cdn-icons-png.flaticon.com/128/3850/3850959.png"></div>
+                    <div>449.00</div>
+                </div>
+                <div class="orig_cost">
+                    <div><s>₹ 899.00</s></div>
+                </div>
+            </div>
+            <div class="cart">
+                <div>ADD TO CART</div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <img src="https://bellavitaorganic.com/cdn/shop/files/1-b.jpg?v=1725628484&width=300">
+            </div>
+            <div class="offer_description">
+                GLAMOUR ESSENTIALS KIT
+            </div>
+            <div class="heading">
+                Date Night Gift Set
+            </div>
+            <div class="star">
+                <div><img style="height: 20px;" src="https://cdn-icons-png.flaticon.com/128/2107/2107957.png"></div>
+                <div>4.4</div>
+                <div>|</div>
+                <div><img style="height:26px;" src="https://cdn-icons-png.flaticon.com/128/15050/15050690.png"></div>
+                <div>(11 Reviews)</div>
+            </div>
+            <div class="price">
+                <div class="cost">
+                    <div><img style="height:22px; margin-top:3px;"
+                            src="https://cdn-icons-png.flaticon.com/128/3850/3850959.png"></div>
+                    <div>549.00</div>
+                </div>
+                <div class="orig_cost">
+                    <div><s>₹ 1199.00</s></div>
+                </div>
+            </div>
+            <div class="cart">
+                <div>ADD TO CART</div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <img
+                    src="https://bellavitaorganic.com/cdn/shop/files/1_7_5a634208-c5a4-4965-aa34-858e2df1798d.jpg?v=1723024188&width=300">
+            </div>
+            <div class="offer_description">
+                OUR BEST-SELLING 4 LIP SHADES
+            </div>
+            <div class="heading">
+                Kiss Proof Liquid Lipstick - 4 x 2...
+            </div>
+            <div class="star">
+                <div><img style="height: 20px;" src="https://cdn-icons-png.flaticon.com/128/2107/2107957.png"></div>
+                <div>4.7</div>
+                <div>|</div>
+                <div><img style="height:26px;" src="https://cdn-icons-png.flaticon.com/128/15050/15050690.png"></div>
+                <div>(23 Reviews)</div>
+            </div>
+            <div class="price">
+                <div class="cost">
+                    <div><img style="height:22px; margin-top:3px;"
+                            src="https://cdn-icons-png.flaticon.com/128/3850/3850959.png"></div>
+                    <div>499.00</div>
+                </div>
+                <div class="orig_cost">
+                    <div><s>₹ 699.00</s></div>
+                </div>
+            </div>
+            <div class="cart">
+                <div>ADD TO CART</div>
+            </div>
+        </div>
+
+    </div>
+    <div class="view">VIEW ALL</div>
+    <div>
+        <img style="width: 100%; margin-top:70px;"
+            src="https://bellavitaorganic.com/cdn/shop/files/Offer-Banner-2-UPB.webp?v=1727436765&width=1400">
+    </div>
+
+    <div style="font-size:30px; text-align: center; margin-top:60px;">LUXURY CATEGORIES</div>
+
+    <div class="product2">
+        <div>
+            <div class="prod2img">
+                <img class="p_img"
+                    src="https://bellavitaorganic.com/cdn/shop/files/cosmetics-category-card-web_a4ad6e4b-07bf-421e-8f23-fcac380118ff.webp?v=1725617238&width=300">
+            </div>
+            <div class="txt">
+                COSMETICS
+            </div>
+        </div>
+        <div>
+            <div class="prod2img">
+                <img class="p_img"
+                    src="https://bellavitaorganic.com/cdn/shop/files/Category-card-for-web-skincare2.webp?v=1725617237&width=300">
+            </div>
+            <div class="txt">
+                SKINCARE
+            </div>
+        </div>
+        <div>
+            <div class="prod2img">
+                <img class="p_img"
+                    src="https://bellavitaorganic.com/cdn/shop/files/intense_1.webp?v=1725617238&width=300">
+            </div>
+            <div class="txt">
+                LUXURY PERFUMES
+            </div>
+        </div>
+        <div>
+            <div class="prod2img">
+                <img class="p_img"
+                    src="https://bellavitaorganic.com/cdn/shop/files/Category-card-body-wash2.webp?v=1725617238&width=300">
+            </div>
+            <div class="txt">
+                BATH & BODY
+            </div>
+        </div>
+        <div>
+            <div class="prod2img">
+                <img class="p_img"
+                    src="https://bellavitaorganic.com/cdn/shop/files/Category-card-for-deo2.webp?v=1725617237&width=300">
+            </div>
+            <div class="txt">
+                BODY DEOS
+            </div>
+        </div>
+        <div>
+            <div class="prod2img">
+                <img class="p_img"
+                    src="https://bellavitaorganic.com/cdn/shop/files/Artboard_4_copy_05b3b2ed-5440-4463-b119-bedcd60ed5c1.webp?v=1725617237&width=300">
+            </div>
+            <div class="txt">
+                GIFT SETS
+            </div>
+        </div>
+    </div>
+
+    <div class="quiz">
+        <div><img class="quiz_img"
+                src="https://bellavitaorganic.com/cdn/shop/files/Fragrance-Finder-Home-Page_1200-x-400_485ebb8a-29c5-453c-bc2d-d11b70b1c291.webp?v=1729248354&width=600">
+        </div>
+        <div><img class="quiz_img"
+                src="https://bellavitaorganic.com/cdn/shop/files/Lipstick_Finder_Home_Page_1200_x_400.webp?v=1728042662&width=600">
+        </div>
+    </div>
+
+    <div class="product3">
+        <div><img style="height: 600px; width: 550px;"
+                src="https://bellavitaorganic.com/cdn/shop/files/Luxe-Perfumes_1_30604851-993d-4964-a86f-d9f6f73de4ec.webp?v=1725617305&width=750">
+        </div>
+        <div>
+            <div>
+                <img style="height:350px; margin-top:20px;"
+                    src="https://bellavitaorganic.com/cdn/shop/files/2_e0b9be5c-f667-43bf-805a-3881fe628fdb.jpg?v=1714553667&width=300">
+            </div>
+            <div class="offer_description">
+                EAU DE PARFUM FOR WOMEN
+            </div>
+            <div class="heading">
+                HOT Mess Woman Perfume - 100ml
+            </div>
+            <div class="star">
+                <div><img style="height: 20px;" src="https://cdn-icons-png.flaticon.com/128/2107/2107957.png"></div>
+                <div>4.9</div>
+                <div>|</div>
+                <div><img style="height:26px;" src="https://cdn-icons-png.flaticon.com/128/15050/15050690.png"></div>
+                <div>(63 Reviews)</div>
+            </div>
+            <div class="price">
+                <div class="cost">
+                    <div><img style="height:22px; margin-top:3px;"
+                            src="https://cdn-icons-png.flaticon.com/128/3850/3850959.png"></div>
+                    <div>799.00</div>
+                </div>
+                <div class="orig_cost">
+                    <div><s>₹ 1,099.00</s></div>
+                </div>
+            </div>
+            <div class="cart">
+                <div>ADD TO CART</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="font-size:30px; text-align: center; margin-top:60px;">CRAZY DEALS</div>
+    <div class="product4">
+        <div>
+            <div class="prod4img">
+                <img class="p4_img"
+                    src="https://bellavitaorganic.com/cdn/shop/files/678-548-01.webp?v=1727432899&width=800">
+            </div>
+            <div class="txt">
+                SELF LOVE KIT
+            </div>
+        </div>
+        <div>
+            <div class="prod4img">
+                <img class="p4_img"
+                    src="https://bellavitaorganic.com/cdn/shop/files/678-548_9118a1ea-6f3a-478c-9e55-28df0b674267.webp?v=1728371651&width=800">
+            </div>
+            <div class="txt">
+                BIG BEAUTY BASH
+            </div>
+        </div>
+        <div>
+            <div class="prod4img">
+                <img class="p4_img"
+                    src="https://bellavitaorganic.com/cdn/shop/files/678-548_eb6ded9c-5f74-4726-baa0-fb6a86472da3.webp?v=1727433124&width=800">
+            </div>
+            <div class="txt">
+                BADE MIYA CHHOTE MIYA
+            </div>
+        </div>
+    </div>
+
+    <div style="font-size:30px; text-align: center; margin-top:70px;">SHOPE BY NOTES</div>
+    <div class="product5">
+        <div>
+            <div class="prod5img">
+                <img class="p5_img"
+                    src="https://bellavitaorganic.com/cdn/shop/files/Mask_Group_616_34fc5435-b516-44d1-bdeb-7ac8103c5c792.webp?v=1725617393&width=300">
+            </div>
+            <div class="txt">
+                Rose
+            </div>
+        </div>
+        <div>
+            <div class="prod5img">
+                <img class="p5_img"
+                    src="https://bellavitaorganic.com/cdn/shop/files/Mask_Group_6172.webp?v=1725617393&width=300">
+            </div>
+            <div class="txt">
+                Citrusy
+            </div>
+        </div>
+        <div>
+            <div class="prod5img">
+                <img class="p5_img"
+                    src="https://bellavitaorganic.com/cdn/shop/files/Mask_Group_618.webp?v=1725617393&width=300">
+            </div>
+            <div class="txt">
+                White Floral
+            </div>
+        </div>
+        <div>
+            <div class="prod5img">
+                <img class="p5_img"
+                    src="https://bellavitaorganic.com/cdn/shop/files/Mask_Group_619.webp?v=1725617393&width=300">
+            </div>
+            <div class="txt">
+                Aquatic
+            </div>
+        </div>
+        <div>
+            <div class="prod5img">
+                <img class="p5_img"
+                    src="https://bellavitaorganic.com/cdn/shop/files/Mask_Group_620.webp?v=1725617394&width=300">
+            </div>
+            <div class="txt">
+                Musk
+            </div>
+        </div>
+        <div>
+            <div class="prod5img">
+                <img class="p5_img"
+                    src="https://bellavitaorganic.com/cdn/shop/files/Mask_Group_621.webp?v=1725617393&width=300">
+            </div>
+            <div class="txt">
+                Spicy
+            </div>
+        </div>
+        <div>
+            <div class="prod5img">
+                <img class="p5_img"
+                    src="https://bellavitaorganic.com/cdn/shop/files/Mask_Group_622.webp?v=1725617393&width=300">
+            </div>
+            <div class="txt">
+                Woody
+            </div>
+        </div>
+    </div>
+
+    <div style="font-size:30px; text-align: center; margin-top:60px;">WHY BELLAVITA</div>
+    <div class="icon">
+        <div style="margin-top:3px;" class="icon1">
+            <div>
+                <img src="./rabbit.png">
+            </div>
+            <div class="txt1">CRUELTY FREE</div>
+            <div class="txt2">Kindness in every bottle: Our commitment to cruelty-free Products</div>
+        </div>
+
+        <div class="icon1">
+            <div>
+                <img src="./perfume.png">
+            </div>
+            <div class="txt1">FRAGRANCE FORWARD</div>
+            <div class="txt2">Luxurious & imported perfume oils in every product</div>
+        </div>
+
+        <div style="margin-top:-7px;" class="icon1">
+            <div>
+                <img src="./wallet.png">
+            </div>
+            <div class="txt1">AFFORDABLE LUXURY</div>
+            <div class="txt2">Offering Premium Quality and Elegance at a Reasonable Price</div>
+        </div>
+
+        <div style="margin-top:-13px;" class="icon1">
+            <div>
+                <img src="./icon4.png">
+            </div>
+            <div class="txt1">GENDER NEUTRAL</div>
+            <div class="txt2">Elevate your self-care routine with bath, body and personal care for all</div>
+        </div>
+
+    </div>
+
+    <div>
+        <img style="width: 100%; height:430px; margin-top: 70px;"
+            src="https://bellavitaorganic.com/cdn/shop/files/download-the-app-banner-desktop.webp?v=1725617524&width=1920">
+    </div>
+
+    <div><img style="margin-top: 50px; height:160px; margin-left:260px;"
+            src="https://bellavitaorganic.com/cdn/shop/files/desktop_banner.webp?v=1725617566&width=1400"></div>
+
+    <div style="font-size:30px; text-align: center; margin-top:60px;">WHAT OUR CUSTOMERS HAVE TO SAY</div>
+    <div class="product6">
+        <div>
+            <img style="height:20px ; opacity:0.3;" src="https://cdn-icons-png.flaticon.com/128/545/545680.png" alt="">
+        </div>
+        <div>
+            <img src="./img1.png">
+        </div>
+        <div>
+            <img src="./img2.png">
+        </div>
+        <div>
+            <img src="./img3.png">
+        </div>
+        <div>
+            <img src="./img4.png">
+        </div>
+        <div>
+            <img src="./img5.png">
+        </div>
+        <div>
+            <img style="height:20px ; opacity:0.3;" src="https://cdn-icons-png.flaticon.com/128/545/545682.png">
+        </div>
+    </div>
+    <div class="stars">
+        <img style="height: 20px;" src="https://cdn-icons-png.flaticon.com/128/2107/2107957.png">
+        <img style="height: 20px;" src="https://cdn-icons-png.flaticon.com/128/2107/2107957.png">
+        <img style="height: 20px;" src="https://cdn-icons-png.flaticon.com/128/2107/2107957.png">
+        <img style="height: 20px;" src="https://cdn-icons-png.flaticon.com/128/2107/2107957.png">
+        <img style="height: 20px;" src="https://cdn-icons-png.flaticon.com/128/2107/2107957.png">
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-top:10px; font-size: 18px; ">BELLAVITA has raised the bar
+        for the perfume industry , Such good quality at very affordable price</div>
+
+    <div style="color: gray; display: flex; justify-content: center; margin-top:6px; font-size: 20px;"><i>- Sanna
+            Thakur</i></div>
+
+    <div style="display: flex; align-items: center; justify-content: center; gap: 5px; margin-top: 6px;">
+        <div><img style="height:20px; opacity: 0.7; margin-top: 8px;"
+                src="https://cdn-icons-png.flaticon.com/128/1384/1384031.png"></div>
+        <div style="font-size:17px;">sannathakur_</div>
+    </div>
+
+    <div class="product7">
+        <div>
+            <img class="p7_img"
+                src="https://bellavitaorganic.com/cdn/shop/files/1_e3a8356d-1e07-4f9e-b006-463aee598ee0.webp?v=1725617784&width=500">
+        </div>
+        <div>
+            <img class="p7_img"
+                src="https://bellavitaorganic.com/cdn/shop/files/2_2453e5e3-fecb-46e3-ad9e-00bea4baa4622.webp?v=1725617784&width=500">
+        </div>
+        <div>
+            <img class="p7_img"
+                src="https://bellavitaorganic.com/cdn/shop/files/3_1_49a17cdc-b7a0-4ae1-a20d-5c3d8eee7bc1.webp?v=1725617816&width=500">
+        </div>
+        <div>
+            <img class="p7_img"
+                src="https://bellavitaorganic.com/cdn/shop/files/4_68a3c022-75df-4304-8d47-6a1671886316.webp?v=1725617784&width=500">
+        </div>
+        <div>
+            <img class="p7_img"
+                src="https://bellavitaorganic.com/cdn/shop/files/5_b43e7ec7-8e4b-464f-b5a4-78854aa116d82.webp?v=1725617784&width=500">
+        </div>
+    </div>
+
+    <div class="product8">
+        <div class="p8_img"><img
+                src="https://bellavitaorganic.com/cdn/shop/files/Pinkvilla_480x_a664ac7e-bd4f-45ae-b43a-b5ce25e0b530.jpg?height=80&v=1716878216">
+        </div>
+        <div class="p8_img"><img
+                src="https://bellavitaorganic.com/cdn/shop/files/BW_460x460_dcd6c999-6863-4ea2-ae4a-5621f5a51507.png?height=80&v=1717310549">
+        </div>
+        <div class="p8_img"><img
+                src="https://bellavitaorganic.com/cdn/shop/files/HT_4a741228-3740-4f84-97bc-3c093ceec75a.jpg?height=80&v=1716360141">
+        </div>
+        <div class="p8_img"><img
+                src="https://bellavitaorganic.com/cdn/shop/files/Elle_480x_db18e8ef-2f25-4299-9c39-73af4c300969.jpg?height=80&v=1716878217">
+        </div>
+        <div class="p8_img"><img
+                src="https://bellavitaorganic.com/cdn/shop/files/Ani_480x_14446b4e-c91a-46df-a133-a95092fe484e.jpg?height=80&v=1716878217">
+        </div>
+        <div class="p8_img"><img
+                src="https://bellavitaorganic.com/cdn/shop/files/IDiva_480x_1617c636-c0ed-4ed2-bb06-36e1906728ff.jpg?height=80&v=1716878216">
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-section">
+            <h4>BESTSELLERS</h4>
+            <div>Ultimate Perfume Box</div>
+            <div>Perfume Gift Set For Men</div>
+            <div>Perfume Gift Set For</div>
+            <div> Women</div>
+            <div>Under Eye Cream for</div>
+            <div>Dark Circles</div>
+            <div>Perfume For Men</div>
+            <div>Perfume For Women</div>
+            <div>Unisex Perfume</div>
+        </div>
+        <div class="footer-section">
+            <h4>INFORMATION</h4>
+            <div>Blogs</div>
+            <div>Newsroom</div>
+            <div>Terms & Conditions</div>
+            <div>Privacy Policy</div>
+            <div>Refund and Return</div>
+            <div>Shipping Policy</div>
+            <div>Bulk Order - GST Invoice</div>
+        </div>
+        <div class="footer-section">
+            <h4>SUPPORT</h4>
+            <div>About Us</div>
+            <div>Contact Us</div>
+            <div>Order Tracking</div>
+            <div>All Products</div>
+            <div>FAQ</div>
+            <div>Sitemap</div>
+        </div>
+        <div class="footer-section">
+            <h4>CONTACT US</h4>
+            <div>Office Location:Plot no.</div>
+            <div>417, Udyog Vihar Phase</div>
+            <div>III, Gurgaon, Haryana,</div>
+            <div>India</div>
+            <div></div>
+            <div></div>
+            <div>shop@bellavitaorganic.com</div>
+            <div></div>
+            <div></div>
+            <div>+91-9311732440</div>
+            <div>Timing: 10:00 AM to 7:00 </div>
+            <div>PM, Monday to Sunday</div>
+            <div></div>
+        </div>
+
+        <div class="exclusive">
+            <h4>EXCLUSIVE</h4>
+            <div class="mail-siegnup">
+                <div>Enter email here</div>
+                <div><img style="height:13px;" src="ArrowRight.png" alt=""></div>
+            </div>
+            <div></div>
+            <div>Sign up here to get the latest news, updates and special </div>
+            <div>offers delivered to your inbox. </div>
+            <div></div>
+            <div>Plus, you'll be the first to know about our discounts!</div>
+            <div></div>
+            <div></div>
+            <div class="social-icons">
+                <div><img style="height:35px;" src="./facebook.png" alt=""></div>
+                <div><img style="height:35px;" src="./twitter.png" alt=""></div>
+                <div><img style="height:35px;" src="./pinterest.png" alt=""></div>
+                <div><img style="height:28px; margin-left:5px;" src="./instagram.png" alt=""></div>
+                <div><img style="height:28px; margin-left:10px;" src="./youtube.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <div class="searched">
+            <h4>MOST SEARCHED KEYWORDS</h4>
+            <div>Perfume |
+                Best perfume for men |
+                attar |
+                Ittar |
+                attar perfume |
+                oud attar |
+                best attar for women |
+                best attar for men |
+                Perfume for men |
+                Vitamin C Face Wash |
+                Perfume for women |
+                Best perfume for women |
+            </div>
+            <div>
+                Perfume set for women |
+                Gift for Men |
+                Face wash for oily skin |
+                Body scrub |
+                Dark circle |
+                Perfume for girls |
+                Dark circles removal cream |
+                Acne face wash |
+                under eye cream |
+                Gift sets for women |
+                Body wash for women |
+            </div>
+            <div>
+                Pocket perfume for men |
+                De tan face pack |
+                Pimple removal cream |
+                Lip scrub |
+                Tan removal face pack |
+                Face wash for acne |
+                Exfoliate scrub |
+                Gift set for men |
+                Coffee Body Scrub |
+                Best long lasting perfume for men |
+            </div>
+            <div>
+                Perfumes for men under 500 |
+                Perfumes for women under 500 |
+                Perfume gift sets |
+                Oud perfume |
+                Ceo perfume |
+                Under eye cream for dark circles |
+                Acne cream |
+                Vitamin c cream for face |
+                Body lotion for women |
+            </div>
+            <div>
+                Long lasting perfume for women |
+                Perfume gift pack for her |
+                Perfume gift pack for him |
+                Charcoal face wash |
+                Body wash for men |
+                Best shower gel for women |
+                Shower Gel for men and Women |
+                Body lotion for dry skin |
+            </div>
+            <div>
+                Body Lotion for men |
+                Body Lotion for women |
+                Shower Gel and Perfume Combo |
+                Shower Travel Kit |
+                Travel Mini Kit |
+                Birthday Gift for Women/Girls |
+                Wedding Gifts for Couples |
+                Gifts for Men Under 500 |
+            </div>
+            <div>
+                Gifts for Women Under 500 |
+                Diwali Gift Ideas |
+                Gifts for Men Under 500 |
+                Gifts for Women Under 500 |
+                Corporate Gifts |
+                Diwali Gifts for Family and Friends |
+                Diwali Gifts for Friends |
+                Diwali Gifts Under 500 |
+            </div>
+            <div>
+                Diwali Gifts Under 1000 |
+                Diwali Premium Gifts |
+                Best Diwali Gifts |
+            </div>
+            <br><br>
+            <div>
+                © 2024, Bella Vita Organic (IDAM Natural Wellness Pvt. Ltd.).
+            </div>
+            <br><br>
+        </div>
+    </div>
+
+</body>
+
+</html>
