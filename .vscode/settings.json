@@ -1,0 +1,8 @@
+{
+    "git.confirmEmptyCommits": true,
+    "git.detectSubmodules": true,
+    "git.enabled": true,
+    "git.enableStatusBarSync": true,
+    "git.openDiffOnClick": true,
+    "git.optimisticUpdate": true
+}
